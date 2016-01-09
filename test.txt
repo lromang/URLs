@@ -1,0 +1,42 @@
+curl https://mxabierto.zendesk.com/api/v2/tickets.json   -d '{"ticket": {"subject": "Comentarios que sugieren atención a un Recurso de Datos", "comment": { "body": "Estimado Carlos Castro Correa, 
+
+ En un intento por mejorar el servicio de Datos Abiertos, perfeccionar los Recursos de Datos que las Dependencias de la Administración Pública publican y asegurar su accesibilidad y permanencia, esta Dirección General ha realizado un ejercicio de prueba -con la intención de hacerlo permanente- para comprobar el funcionamiento de la descarga de sus recursos de datos. Durante dicha prueba, detectamos posibles problemas con los siguientes recursos de datos bajo su responsabilidad:
+
+
+Recurso: Programa de Disposición Final de Bienes Muebles
+URL: http://www.puertocoatzacoalcos.com.mx/datos/Programa_de_Disposición_final_de_bienes_2015.csv
+Fecha de prueba: Fri Jan  8 12:03:52 CST 2016
+----------------------
+ Recurso: Programación Mensual de Cruceros
+URL: http://www.puertodevallarta.com.mx/Documentos/DatosACAL_MENSUAL.csv
+Fecha de prueba: Fri Jan  8 12:22:18 CST 2016
+----------------------
+ Recurso: Plan de Apertura Institucional de ASA
+URL: http://adela.datos.gob.mx/plan-de-apertura/asa/export.csv
+Fecha de prueba: Fri Jan  8 11:44:24 CST 2016
+----------------------
+ Recurso: Catalogo de Tipos de Construcción
+URL: http://minatitlan.gob.mx/Portals/0/datosabiertos/inventario/cat_tipos_construcciones.csv
+Fecha de prueba: Fri Jan  8 12:10:05 CST 2016
+----------------------
+ Recurso: Catalogo de Localidades
+URL: http://minatitlan.gob.mx/Portals/0/datosabiertos/inventario/catalogo_de_comunidades.csv
+Fecha de prueba: Fri Jan  8 12:10:05 CST 2016
+----------------------
+ Recurso: Plan de Apertura Institucional de Minatitlán
+URL: http://adela.datos.gob.mx/plan-de-apertura/minatitlan/export.csv
+Fecha de prueba: Fri Jan  8 12:16:03 CST 2016
+
+
+ Los errores pueden ser los siguientes:
+
+1.- El servidor no está disponible.
+2.- El recurso requiere derechos de acceso.
+3.- El servidor toma demasiado tiempo en responder a una solicitud por el recurso.
+
+ Amablemente sugerimos atender dichas ligas y revisar todos los conjuntos de datos restantes que su dependencia publica en el sitio. Sin más por el momento, me mantengo a su disposición para resolver cualquier duda sobre el proceso de cumplimiento de la Política de Datos Abiertos en el correo escuadron@datos.gob.mx o vía telefónica al 50935300 ext: 7054.
+
+Saludos cordiales.
+
+
+"}, "status": "new", "type": "task", "priority": "normal", "tags": ["ligas_rotas"], "requester_id": "1261773957"}}' -H "Content-Type: application/json" -v -u luis.roangarci@gmail.com:Ikidefenix131090 -X POST

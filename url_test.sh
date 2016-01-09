@@ -6,10 +6,10 @@ do
     row=$(tail -n +2 urls.psv |awk 'FNR == "'"$i"'" {print}' | sed 's/"//g')
 
     # Get data
-    dep=$(echo $row  | cut -d '|' -f1)
-    slug=$(echo $row | cut -d '|' -f2)
-    rec=$(echo $row  | cut -d '|' -f3)
-    url=$(echo $row  | cut -d '|' -f4)
+    dep=$(echo $row  | cut -d "|" -f1)
+    slug=$(echo $row | cut -d "|"  -f2)
+    rec=$(echo $row  | cut -d "|" -f3)
+    url=$(echo $row  | cut -d "|" -f4)
             
     # Time prior URL verification.
     T="$(date +%s)"
@@ -30,5 +30,5 @@ do
     echo  "dep: $dep | slug: $slug | rec: $rec | url: $url | status: $urlstatus | execution time: $T | date: `date`"
 
     # Send results to file.
-    echo  "$dep,$slug,$rec,$url,$urlstatus,$T,`date`" >> urlstatus.csv
+    echo -e  "$dep \t $slug \t $rec \t $url \t $urlstatus \t $T \t `date`" >> urlstatus.csv
 done

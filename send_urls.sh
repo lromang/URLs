@@ -19,7 +19,7 @@ do
     then
         curl https://mxabierto.zendesk.com/api/v2/tickets.json   -d '{"ticket": {"subject": "Comentarios que sugieren atención a un Recurso de Datos", "comment": { "body": "Estimado $admi,
 
-En un intento por mejorar el servicio de Datos Abiertos, perfeccionar los Recursos de Datos que las Dependencias de la Administración Pública publican y asegurar su accesibilidad y permanencia, esta Dirección General ha realizado un ejercicio de prueba -con la intención de hacerlo permanente- para comprobar el funcionamiento de la descarga de sus recursos de datos. Durante dicha prueba, detectamos posibles problemas con el siguiente recurso de datos bajo su responsabilidad:
+En un intento por mejorar el servicio de Datos Abiertos, perfeccionar los Recursos de Datos que las Dependencias de la Administración Pública publican y asegurar su accesibilidad y permanencia, esta Dirección General ha realizado un ejercicio de prueba -con la intención de hacerlo permanente- para comprobar el funcionamiento de la descarga de sus recursos de datos. Durante dicha prueba, detectamos posibles problemas con los siguientes recursos de datos bajo su responsabilidad:
 
 fecha de la prueba: $date
 recurso: $rec
