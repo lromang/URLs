@@ -84,14 +84,14 @@ send_multi_ticket <- function(all_data_non_disp){
         urls    <- send_to$url
         recs    <- send_to$rec
         dates   <- send_to$date
-        ## email   <- "carlos.castro@presidencia.gob.mx"
-        ## admi    <- "Carlos Castro Correa"
-        ## idad    <- "1163470257"
-        ## subid   <- "1163470257"
-        email   <- send_to$mail_adm[1]
-        admi    <- send_to$administrador[1]
-        idad    <- send_to$id_zen_adm[1]
-        subid   <- send_to$id_zen_adm[1]
+        email   <- "andres@fractal.ai"
+        admi    <- "Andrés Gómez Urquiza"
+        idad    <- "1154750628"
+        subid   <- "1154750628"
+        ## email   <- send_to$mail_adm[1]
+        ## admi    <- send_to$administrador[1]
+        ## idad    <- send_to$id_zen_adm[1]
+        ## subid   <- send_to$id_zen_adm[1]
         send_ticket(deps[i], urls, recs, dates, admi, idad, subid, email)
     }
 }
@@ -99,5 +99,6 @@ send_multi_ticket <- function(all_data_non_disp){
 ## Prueba
 #######
 data_test <- all_data[all_data$status != "disponible",]
+data_test <- data_test[data_test$code != "time_out",]
 data_test <- data_test[data_test$slug != "pemex",]
 send_multi_ticket(data_test)
